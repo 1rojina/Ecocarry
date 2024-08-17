@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.redButton {
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 20px;
+  width: 100%;
+  background-color: #601c1c;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  min-width: 300px;
+}
+
+.redButton:disabled {
+  background-color: #bebebe;
+  cursor: default;
+}
+
+.tags {
+  padding: 0;
+}
+
+.tags li {
+  display: inline-block;
+  padding: 12px 18px;
+  background-color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  border: 1px solid transparent;
+  transition: all 0.15s ease-in-out;
+}
+
+.tags li:hover {
+  border-color: rgb(100, 55, 55);
+}
+
+.tags li.active {
+  background-color: rgb(88, 36, 36);
+  color: #fff;
+}
+
+.emptyBlock {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.subtitleEmptyBlock {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.removeBtn {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.removeBtn:hover {
+  opacity: 1;
+}
+
+@media (max-width: 575px) {
+  .emptyBlock {
+    height: 80vh;
+  }
+  .subtitleEmptyBlock {
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
